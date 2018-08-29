@@ -5,18 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>微软Bing搜索-国内版</title>
-    
-</head>
-<span>图片<br>
-      视频
-      学术
-      词典
-      地图 </span>
-    <a id="scpl0" aria-owns="scpc0" aria-controls="scpc0" aria-expanded="false" onclick="hpulc4hdr();selectScope(this, 'images');" href="/images?FORM=Z9LH" h="ID=SERP,5026.1">图片</a>
-   <address>不知道</address>
-   <a href="http://www.bing.com.cn">bing国内版</a>
+    <style>
+        html,body {
+            min-width: 100%;
+            min-height: 100%;
+        }
+        body {
+            background-color: green;
+            background-image: url(https://cn.bing.com/az/hprichbg/rb/Unisphere_ZH-CN7027287379_1920x1080.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* width: 1116px;
+            height: 628px; */
+        }
+        table {
+            margin-left: 70px
+        }
+        table tr td {
+            display: inline-block;
+            margin: auto 18px;
+            font-size: 18px;
+            color: rgb(255,255,255);
+            opacity: 0.8;
+            padding: 0;
+        }
+        table tr td:hover {
+            opacity: 1
+        }
+        .list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            margin-left: 70px;
 
+        }
+        .list li {
+            display: inline-block;
+            margin: auto 18px;
+            font-size: 18px;
+            color: rgb(255,255,255);
+            opacity: 0.8;
+            cursor: pointer;
+        }
+        .list li:hover {
+            opacity: 1
+        }
+        .box_style img{
+            border: 1px solid red;
+            padding: 10px;
+            margin: 10px 20px 30px 40px
+        }
+        /*
+        class .box_style 类选择器 10
+        id #index1 100
+        div 属性选择器 1
+        */
+        #index0 {
+            color: green;
+        }
+        table tr .cl1 {
+           color: red 
+        }
+        table .cl2 {
+            color: gray
+        }
+    </style>
+</head>
 <body>
-    
+<Table>
+    <tr>
+        <td class="cl2 cl1">图片</td>
+        <td id="index0">视频</td>
+        <td>学术</td>
+        <td>词典</td>
+        <td>地图</td>
+    </tr>
+</Table>
+<ul class="list">
+    <li>图片</li>
+    <li>视频</li>
+    <li>学术</li>
+    <li>词典</li>
+    <li>地图</li>
+</ul>
+<div class="box_style">
+    <i>1</i>
+    <span>1</span>
+    <em>1</em><img src="https://cn.bing.com/az/hprichbg/rb/Unisphere_ZH-CN7027287379_1920x1080.jpg" width="100" height="100" alt="">
+    <div>1</div>
+
+</div>
+      
 </body>
 </html>
