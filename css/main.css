@@ -1,0 +1,35 @@
+body{margin: 0;
+background: pink;
+color:gray;
+line-height: 1.5
+}
+a{text-decoration: none}
+.side-bar{background:blanchedalmond;
+float: left;
+width: 30%
+}
+
+.side-bar>*{
+    padding: 10px;
+}
+.side-bar.nav a,
+.side-bar.tag-list a {display: block;
+
+}
+.main{
+float: right;
+width: 70%;
+
+}
+.header.logo{padding: 15px 20px;
+font-size: 20px;
+display: inline-block;
+border: 5px cornsilk
+}
+.article-list{margin-right: 30%;
+padding: 20px 30px
+}
+.article-list.item.title{font-size: 20px;
+font-weight: 700
+}
+
