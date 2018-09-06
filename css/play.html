@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="游乐园 css动画">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>开心游乐园</title>
+    <style>
+    body{
+        margin: 0;
+        background-image: url("images/bg.png");
+        background-size: cover;/*背景图片等比例缩放*/
+     
+    }
+    .playa{
+        width: 768px;
+        height: 768px;
+        background-image: url("images/fsw.png");
+        margin: 33px auto 0 auto;
+        animation:changeRotate1 5s infinite linear; 
+       
+      
+    }
+    .pic1{
+    position: absolute;/*绝对定位*/
+   
+        top: 175px;
+      width: 130px;
+      height: 170px;
+      background-image: url("images/boy.png");
+      animation:changeRotate1 5s infinite linear; 
+     
+       
+    }
+    .pic2{
+        position: absolute;/*绝对定位*/
+        left: 330px;
+        top: 655px;
+      width: 130px;
+      height: 170px;
+      background-image: url("images/girl.png");
+      animation:changeRotate1 5s infinite linear;  
+     
+     
+    }
+    .pic3{
+        position: absolute;/*绝对定位*/
+        left: 610px;
+        top: 175px;
+      width: 130px;
+      height: 170px;
+      background-image:url("images/shamegirl.png");  
+      animation:changeRotate 5s infinite linear; 
+     }
+     @keyframes changeRotate{
+         from{ transform: rotate(0deg);}
+         to{ transform: rotate(360deg);}
+         }
+         @keyframes changeRotate1{
+         from{ transform: rotate(0deg);}
+         to{ transform: rotate(-360deg);}
+         }
+    </style>
+</head>
+<body>
+    <div class="playa">
+<div class="pic1"></div>
+<div class="pic2"></div>
+<div class="pic3"></div>
+
+    </div>
+    <div class="div"></div>
+    <div class="div"></div>
+</body>
+</html>
