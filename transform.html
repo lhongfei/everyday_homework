@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords"content="旋转 跳跃 旋转">
+    <title>css旋转</title>
+<style>
+body{
+    margin: 0px;
+}
+.pq1{ display: flex;
+     justify-content: space-between;
+    width: 940px;
+     height: 300px;
+   
+     margin: 60px auto 0px auto;
+
+}
+.pq2{
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+  
+}
+.pq2:hover .textlist
+{ transform: rotateY(0deg)}
+.pq2:hover .listpic
+{ transform: rotateY(-90deg)}
+.listpic{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    transition: 0.5s;
+  
+}
+.textlist{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    background: rgba(0, 0, 0,.3);
+    transform: rotateY(90deg);
+    transition: 0.5s;
+}
+p
+{   margin: 0px;
+    color: white;
+    text-align: center 
+   }
+</style>
+
+</head>
+<body>
+ <div class="pq1">
+    
+    <div class="pq2">
+    <div class="listpic"><img src="images/1.jpg"></div>
+    <div class="textlist"><p>学校图书馆闭馆的声音，听了快一年了，每天晚上都听着这个声音，才感觉时间流逝。。。马上考研了，坚持！！以后听着这首歌就会怀念现在的这段日子，付出拼搏加油！</p></div>
+    </div>
+     <div class="pq2">
+            <div class="listpic">
+         <img src="images/2.jpg"></div>
+        <div class="textlist"><p>“你何苦在一棵树上吊死？”  “有一种树叫榕树，独木成林。我走到哪遇见谁，都是你。”  ——许子祁</p></div>
+       </div>
+     <div class="pq2">
+            <div class="listpic">
+        <img src="images/3.jpg"></div>
+        <div class="textlist"><p>弹琴的手法比原创成熟，丰满，技术性强。但不知道为什么，却没有原版那纯净如水晶般的哀伤了。</p></div>
+    </div>
+    
+ </div>
+ <div class="div"></div>   
+</body>
+</html>

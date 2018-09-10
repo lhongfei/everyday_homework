@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>卷帘门效果</title>
+<style>
+ *{margin: 0;
+   
+
+    
+    
+
+ }   
+.box{
+    width: 1020px;
+    height: 720px;
+    
+    background: gray;
+    margin: 20px auto 0;
+}
+.box-list{
+ width: 300px;
+ height: 200px; 
+ background: red ;
+ float: left;
+ border: 10px solid white;
+ margin: 10px;
+ overflow: hidden;
+}
+.mask{
+ width: 300px;
+ height: 200px; 
+ /* opacity: 0; */
+ background:rgba(0, 0, 0,.5 ) ;
+ transform:translateY(-404px)  ;
+ /* transition: all 1s cubic-bezier(0.5,-0.49, 0.49, 1.44) */
+ /* animation: go; */
+}
+.mask:hover {
+    height: 200px;
+    /* opacity: 1; */
+}
+@keyframes go{
+    0% {
+        transform: translateY(-404px)
+    }
+    85% {
+        transform:translateY(-204px);
+    }
+    95% {
+        transform:translateY(-254px);
+    }
+    100% {
+        transform:translateY(-204px);
+    }
+}
+.box-list:hover .mask{
+    transform:translateY(-204px);
+    animation: go 1s
+}
+
+
+</style>
+
+
+
+</head>
+<body>
+<div class="box"> 
+<div class="box-list">
+    <img src="images/3.jpg">
+    <div class="mask"></div>
+</div>
+<div class="box-list">
+    <img src="images/4.jpg">
+    <div class="mask"></div>
+</div>
+<div class="box-list">
+    <img src="images/5.jpg">
+    <div class="mask"></div>
+</div>
+<div class="box-list">
+    <img src="images/6.jpg">
+    <div class="mask"></div>
+</div>
+<div class="box-list">
+    <img src="images/7.jpg">
+    <div class="mask"></div>
+</div>
+<div class="box-list">
+    <img src="images/8.jpg">
+    <div class="mask"></div>
+</div>
+<div class="box-list">
+    <img src="images/9.jpg">
+    <div class="mask"></div>
+</div>
+<div class="box-list">
+    <img src="images/10.jpg">
+    <div class="mask"></div>
+</div>
+<div class="box-list">
+    <img src="images/12.jpg">
+    <div class="mask"></div>
+</div>
+</div>
+           
+</body>
+</html>
