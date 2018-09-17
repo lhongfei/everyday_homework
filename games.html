@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>拳皇小游戏</title>
+    <style type="text/css">
+    *{margin:0;padding:0;}
+    html{height: 100%;}
+    body{height: 100%;background:url('images/bg.jpg') no-repeat;
+    background-size: 100% 100%;
+    }
+    img{
+       position:absolute;
+       bottom: 50px;
+       width: 200px;
+       height: 350px;
+
+    }
+    
+    
+    </style>
+</head>
+<body>
+<div id="site">
+<img src="images/stand.gif" data-name="yagami" id="MC">
+<img src="images/stand.gif" data-name="taiyangshen"id="MC1">
+</div>
+
+<script type="text/javascript">
+// 用户可以通过键盘控制游戏人物，让游戏人物完成指定动作
+//人物动作表
+var active={
+    yagami:{
+        forward:function(){
+            console.log("八神前进");},
+        retreat:function(){
+            console.log(八神后退);},
+        jump:function(){
+            console.log(八神跳跃);},
+        boom:function(){
+            console.log(八神暴击);},
+        sitedown:function(){
+            console.log(八神蹲下);},
+        bigboom:function(){
+            console.log(八神放大);}
+    },
+    orochi:{
+        forward:function(){
+            console.log("大蛇前进");},
+        retreat:function(){
+            console.log(大蛇后退);},
+        jump:function(){
+            console.log(大蛇跳跃);},
+        boom:function(){
+            console.log(大蛇暴击);},
+        sitedown:function(){
+            console.log(大蛇蹲下);},
+        bigboom:function(){
+            console.log(大蛇放大);},
+    }
+    
+}
+//键值与动作名称对应表
+var commands={
+    "68":"forward",
+    "65":"retreat",
+    "87":"jump",
+    "79":"boom",
+    "83":"sitedown",
+    "82":"bigboom",
+}
+function makecommand(obj,key){
+
+}
+function person(elementnode){
+  this.elementnode=elementnode;
+  this.personName=elementnode.getAttribute("data-name");
+}
+var yagamImage=document.getElementById('MC');
+var orochi=document.getElementById(MC1);
+
+var yagami =new person(yagamImage);
+var orochi =new person(orochi)
+
+document.onkeydown=function(e){
+var e=e||window.event;//获取事件对象
+var key=e.keycode;//保存键值
+var command=makecommand(yagami,key);//得到具体命令
+}
+
+</script>    
+</body>
+</html>
